@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/*
+Mobile Devices – 320px — 480px
+iPads and Tablets – 481px — 768px
+Laptops and small screen – 769px — 1024px
+Large screens and Desktops – 1025px — 1200px
+TV and Extra Large Screens – 1201px and more
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body, html {
+        background: linear-gradient(to bottom,#1414eb, #4949ceb8);
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: auto;
+        position: relative;
+    }
+
+    main {
+        height: 55%;
+        width: 80vw;
+        background:  url(../imagens/metal.jpg) no-repeat right fixed;
+        background-size: cover;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    section {
+        width: 59%;  
+        position: relative;
+        border-radius: 0px 10px 10px 00px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background: linear-gradient(to top, rgb(20, 20, 235), rgba(65, 65, 175, 0.611));
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: auto;
+        position: relative;
+    }
+
+    main {
+        height: 55%;
+        width: 90vw;
+        background:  url(../imagens/metal.jpg) no-repeat right fixed;
+        background-size: cover;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    section {
+       position: relative;
+       width: 50%;
+       border-radius: 10px 0px 0px 10px;
+    }
+}

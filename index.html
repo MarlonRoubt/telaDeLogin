@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/mobile-first.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+       <main>
+            <section>
+                <h1>Login</h1>
+                <p>Seja bem-vindo!</p>
+                <form action="login.php" autocomplete="on" method="post">
+                    <div class="campo">
+                        <label for="iemail"><span class="material-icons">person</span></label>
+                        <input type="email" name="email" id="iemail" required autocomplete="email" maxlength="30" placeholder="Digite seu melhor E-mail">
+                    </div>
+
+                    <div class="campo">
+                        <label for="isenha"><span class="material-icons" width="50px">key</span></label>
+                        <input type="password" name="senha" id="isenha" required  minlength="8" maxlength="30" placeholder="Digite sua senha">
+                    </div>
+                    <button type="submit" class="entrar" value="submit">Entrar</button>
+                    <button type="button" class="senha"><a href="#">Esqueci a senha</a>.</button>
+                </form>
+            </section>
+       </main>
+   </div>
+</body>
+</html>
